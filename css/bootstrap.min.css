@@ -3082,9 +3082,10 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #2124B1;
-    border-color: #2124B1
+    background: linear-gradient(to right, rgb(1, 103, 196), #0167C4);
+    border-color: #0167C4;
 }
+
 
 .btn-primary:hover {
     color: #fff;
@@ -3447,8 +3448,8 @@ fieldset:disabled .btn {
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #2124B1;
-    border-color: #2124B1
+    background: linear-gradient(to right, rgb(1, 103, 196), #0167C4);
+    /* Gradient on hover */
 }
 
 .btn-check:focus+.btn-outline-primary,
@@ -8288,9 +8289,23 @@ fieldset:disabled .btn {
     word-break: break-word !important
 }
 
-.text-primary {
+/* .text-primary {
     color: #2124B1 !important
+} */
+
+.text-primary {
+    background: linear-gradient(to right, rgb(1, 103, 196), #0167C4);
+    /* Gradient background */
+    -webkit-background-clip: text;
+    /* Clips the background to the text */
+    -webkit-text-fill-color: transparent;
+    /* Makes the text itself transparent so the gradient shows through */
+    background-clip: text;
+    /* For non-webkit browsers */
+    text-fill-color: transparent;
+    /* For non-webkit browsers */
 }
+
 
 .text-secondary {
     color: #4777F5 !important
