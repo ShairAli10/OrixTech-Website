@@ -639,8 +639,8 @@ progress {
 .container-xl,
 .container-xxl {
     width: 100%;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
+    /* padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem); */
     margin-right: auto;
     margin-left: auto
 }
@@ -683,7 +683,7 @@ progress {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1441px) {
 
     .container,
     .container-sm,
@@ -691,7 +691,7 @@ progress {
     .container-lg,
     .container-xl,
     .container-xxl {
-        max-width: 1440px
+        max-width: none;
     }
 }
 
